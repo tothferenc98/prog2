@@ -1,0 +1,99 @@
+C:
+user@user-X550VX:~/Dokumentumok/prog2/liskov$ time ./a.out 6
+10^6
+6
+
+real	0m1,703s
+user	0m1,703s
+sys	0m0,000s
+user@user-X550VX:~/Dokumentumok/prog2/liskov$ time ./a.out 7
+10^7
+7
+
+real	0m19,757s
+user	0m19,757s
+sys	0m0,000s
+user@user-X550VX:~/Dokumentumok/prog2/liskov$ time ./a.out 8
+10^8
+C
+
+real	4m0,781s
+user	4m0,772s
+sys	0m0,000s
+user@user-X550VX:~/Dokumentumok/prog2/liskov$ 
+
+
+##############################################################################################################
+
+C++:
+user@user-X550VX:~/Dokumentumok/prog2/liskov$ time ./a.out 6
+10^6
+6
+
+real	0m1,702s
+user	0m1,698s
+sys	0m0,004s
+user@user-X550VX:~/Dokumentumok/prog2/liskov$ time ./a.out 7
+10^7
+7
+
+real	0m19,919s
+user	0m19,918s
+sys	0m0,000s
+user@user-X550VX:~/Dokumentumok/prog2/liskov$ time ./a.out 8
+10^8
+C
+
+real	4m4,616s
+user	4m4,553s
+sys	0m0,032s
+user@user-X550VX:~/Dokumentumok/prog2/liskov$ 
+
+###############################################################################################################
+
+C#:
+user@user-X550VX:~/Dokumentumok/prog2/liskov$ time mono BPP.exe 6
+10^6
+A 1000000. pozíción lévő jegye 6
+
+real	0m1,672s
+user	0m1,664s
+sys	0m0,008s
+user@user-X550VX:~/Dokumentumok/prog2/liskov$ time mono BPP.exe 7
+10^7
+A 10000000. pozíción lévő jegye 7
+
+real	0m19,682s
+user	0m19,609s
+sys	0m0,020s
+user@user-X550VX:~/Dokumentumok/prog2/liskov$ time mono BPP.exe 8
+10^8
+A 100000000. pozíción lévő jegye C
+
+real	3m52,309s
+user	3m52,218s
+sys	0m0,016s
+user@user-X550VX:~/Dokumentumok/prog2/liskov$
+
+################################################################################################################
+
+Java:
+user@user-X550VX:~/Dokumentumok/prog2/liskov$ time java BPP 6
+10^6
+6
+real	0m1,645s
+user	0m1,653s
+sys	0m0,008s
+user@user-X550VX:~/Dokumentumok/prog2/liskov$ time java BPP 7
+10^7
+7
+real	0m18,511s
+user	0m18,500s
+sys	0m0,028s
+user@user-X550VX:~/Dokumentumok/prog2/liskov$ time java BPP 8
+10^8
+C
+real	3m37,145s
+user	3m37,160s
+sys	0m0,052s
+user@user-X550VX:~/Dokumentumok/prog2/liskov$
